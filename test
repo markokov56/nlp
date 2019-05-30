@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "test git jenkins"'
+                sh '''
+                    echo "ok ok Multiline shell steps works too"
+                    ls -lah
+                '''
+            }
+        }
+    }
+}
