@@ -1,3 +1,4 @@
 requests>=2.20.0
+NumPy>=1.11.0
 
 
