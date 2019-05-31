@@ -1,10 +1,7 @@
-import json
-import requests
+import json, requests, base64
 
 client_key = 'Q0XtFh6u2uCTRglDpvHzKGhoY'
 client_secret = 'QW0FuM9xWp5e19T7WfwPhGXUN4A48lHnSlrrAhCEKWwYUbeVTA'
-
-import base64
 
 key_secret = '{}:{}'.format(client_key, client_secret).encode('ascii')
 b64_encoded_key = base64.b64encode(key_secret)
