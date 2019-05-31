@@ -37,7 +37,7 @@ search_params = {
     #'q': 'to:@EmmanuelMacron',
     'q': 'to:@EmmanuelMacron since:2019-01-01',
     'result_type': 'mixed',
-    'count': 10,
+    'count': 1,
     'tweet_mode': 'extended'
 }
 
