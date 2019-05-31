@@ -1,7 +1,7 @@
 import requests
-print("requests package: " + requests.__version__))
+print("requests package: ok")
 import json
-print("json package: " + json.__version__))
+print("json package: ok")
 #import base64
 #print("base64 package: " + base64.__version__))
 
