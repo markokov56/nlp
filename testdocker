@@ -6,7 +6,10 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'python --version'
-                sh 'pip install requests --user'
+                sh 'python -m venv env'
+                sh 'source ./env/bin/activate' 
+                sh 'python -m pip install requests'
+                
                 echo "executing python script api twitter"
                 sh 'python apitwitter_git.py'
             }
