@@ -6,11 +6,12 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'python --version'
-                sh 'python -m venv env'
-                sh 'pip install --user requests'
-                
                 echo "executing python script api twitter"
-                sh 'python apitwitter_git.py'
+                withEnv(["HOME=${env.WORKSPACE}"]) {
+                    sh 'pip install --user -r requirements.txt'
+                    sh 'python apitwitter_git.py'
+                }
+                echo "executing python script api twitter OK"   
             }
         }
     }
