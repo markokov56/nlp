@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 echo "executing python script"
+                sh 'python python.py'
             }
         }
     }
