@@ -46,6 +46,8 @@ search_url = '{}1.1/search/tweets.json'.format(base_url)
 search_resp = requests.get(search_url, headers=search_headers, params=search_params)
 
 print(search_resp.status_code)
+tweet_data = search_resp.json()
+print(tweet_data)
 
 print("end py run")
 
