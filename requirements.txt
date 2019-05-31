@@ -1,4 +1,3 @@
-json
-base64
+
 requests==2.3.0
 
