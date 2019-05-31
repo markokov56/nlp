@@ -50,5 +50,22 @@ print(search_resp.status_code)
 tweet_data = search_resp.json()
 print(tweet_data)
 
+print("-------------------------------------------------------------------------------")
+
+#send data to mongodb db
+#client = MongoClient() "127.0.0.1", port: 27017 
+print("mongodb operations")
+print("mongodb connection to DB ...")
+mgclient = MongoClient('mongodb://127.0.0.1:27017')
+db = mgclient['socialdata']
+print("mongodb connection to DB ok")
+
+print("mongodb DB insert documents in collection....")
+db.macron.insert_many(tweet_data["statuses"])
+
+print("mongodb DB insert documents in collection OK")
+
+
+
 print("end py run")
 
