@@ -34,7 +34,7 @@ search_headers = {
 search_params = {
     #'q': 'to:@EmmanuelMacron',
     'q': 'to:@EmmanuelMacron since:2019-01-01',
-    'result_type': 'mixed',
+    'result_type': 'recent',
     'count': 10,
     'tweet_mode': 'extended'
 }
