@@ -57,11 +57,11 @@ print("-------------------------------------------------------------------------
 print("mongodb operations")
 print("mongodb connection to DB ...")
 mgclient = MongoClient('mongodb://127.0.0.1:27017')
-db = mgclient['socialdata']
+db = mgclient['dbtest']
 print("mongodb connection to DB ok")
 
 print("mongodb DB insert documents in collection....")
-db.macron.insert_many(tweet_data["statuses"])
+db.jenkins.insert_many(tweet_data["statuses"])
 
 print("mongodb DB insert documents in collection OK")
 
